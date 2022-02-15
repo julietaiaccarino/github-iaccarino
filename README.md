@@ -11,6 +11,10 @@
 
 - ⚡ Fun fact **Done its better that perfect**
 
+<p align="left">
+  En este repositorio estoy trabajando con el primer desafio de GitHub
+</p>
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/julieta-iaccarino" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="julieta-iaccarino" height="30" width="40" /></a>
