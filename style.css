@@ -1,0 +1,292 @@
+/*Reseteo de estilos predeterminados*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/*fin de reseteo de estilos predeterminados*/
+
+:root {
+    --body-background:#f8f5f0;
+    --titles-color: #c5a75e;
+    --imagen-description: 15px;
+    --footer-writing: #fff;
+}
+
+/*Tipografias - importacion Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/* font-family: 'Bree Serif', serif; */
+
+
+body {
+    background-color: #f8f5F0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*inicio de estilos del header*/
+
+.header-container {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+/*solo para desktop*/
+@media screen and (min-width:981px) {
+    .header-container {
+        position: fixed;
+    }
+}
+
+.header {
+    background-color: rgb(18, 18, 18);
+    border:2px solid var(--titles-color);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title {
+    color: var(--titles-color);
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+.logo {
+     width: 100%;
+}
+
+/*para separar el menu*/
+#border-header {
+    border-right: 2px solid var(--titles-color);
+    padding: 21px 10px 22px 0px;
+}
+/*fin de estilos del header*/
+
+/*inicio estilo del main*/
+.main-container {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr ;
+    grid-template-rows: 400px 70px 600px;
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    grid-template-areas: 'img img img img img'
+    '. parrafo parrafo parrafo .'
+    '. producto producto producto .';
+    }
+/*inicio estilo seccion 1 carrousel*/
+.carrousel {grid-area: img;
+}
+.home {
+    width: 33%;
+}
+/*fin de estilo seccion 1 carrousel, falta animacion*/
+
+/*inicio estilo seccion 2 descripcion*/
+.parrafo-container {grid-area: parrafo;
+    align-items: center;
+}
+
+.parrafo-producto {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid rgb(14, 13, 13);
+    width: 90%;
+    justify-content: center;
+}
+/*fin estilo seccion 2 descripcion*/
+
+/*inicio estilo seccion 3 producto*/
+.product-container { grid-area: producto;
+    
+}
+.product-1 { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+.product-2 { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.product-title {
+    font-size: var(--imagen-description);
+    color: var(--titles-color);
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.orden {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*fin de estilo seccion 3 productos*/
+
+/*inicio estilos de contacto*/
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto {
+    width: 70%;
+    margin: 150px 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 12% 30% 16% 30% 12%;
+    grid-template-rows: 50px 100px 350px 220px;
+    grid-template-areas:
+    ". . titulo . ."
+    ". parrafo1 . parrafo2 ."
+    ". mapa mapa mapa ."
+    ". formulario formulario formulario . "
+    ;
+    color: black;
+    background-color:#fbedd5;
+}
+    
+.contact-title {
+    text-align: center;
+    grid-area: titulo;
+}
+.adress-container {
+    grid-area: parrafo1;
+    justify-self: end;
+}
+.hours-container {
+    grid-area: parrafo2;
+    justify-self: start;
+}
+.mapa{
+    grid-area: mapa;
+    justify-self: center;
+}
+.formulario{
+    grid-area: formulario;
+}
+/*fin de estilos de contacto*/
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #ccc
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: .5em;
+}
+
+
+
+/*inicio estilos del footer*/
+
+.footer-container {
+    padding-top: 50px;
+    background-color: #982c3b;
+    color: var(--footer-writing);
+    border-top: 2px solid #252932 ;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*estilo del footer para mobiles and tablets*/
+@media screen and (max-width:980px) {
+    .footer-container {
+        background-color: #000;
+    }
+
+}
+
+.footer-inline {
+    display: flex;
+    width: 100%;
+}
+
+.footer-center {
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.end {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+.contact {
+    color: var(--footer-writing);
+}
+/*fin de estilos del footer*/
+
+
+
+
+
