@@ -12,7 +12,7 @@
 - ⚡ Fun fact **Done its better that perfect**
 
 <p align="left">
-  En este repositorio estoy trabajando con el primer desafio de GitHub
+  En este repositorio estoy trabajando con el desafio Bootstrap
 </p>
 
 <h3 align="left">Connect with me:</h3>
