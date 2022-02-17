@@ -3,7 +3,7 @@
 <h1 align="center">Hi 👋, I'm Julieta Iaccarino</h1>
 <h3 align="center">Studying web development</h3>
 
-- 🔭 I’m currently working on [Tutto Salumi](https://github.com/julietaiaccarino/github-iaccarino)
+- 🔭 I’m currently working on [Tutto Salumi website](https://github.com/julietaiaccarino/github-iaccarino)
 
 - 🌱 I’m currently learning **HTML, CSS, Git**
 
