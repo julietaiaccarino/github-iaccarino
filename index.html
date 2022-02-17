@@ -4,20 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--linkear el html con el CSS-->
     <link rel="stylesheet" href="style.css">
 
     <title>Tutto Salumi</title>
 </head>
 <body>
+    <!--nav bootstrap-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active title" aria-current="page" href="index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/fiambres.html">FIAMBRES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/quesos.html">QUESOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/delicatessen.html">DELICATESSEN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/encurtidos.html">ENCURTIDOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/sin-tacc.html">SIN TACC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="pages/vinos-y-bebidas.html">BEBIDAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="contacto.html" target="_blank">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="#donde-estamos">Donde estamos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active title" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/fiambres.html">FIAMBRES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/quesos.html">QUESOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/delicatessen.html">DELICATESSEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/encurtidos.html">ENCURTIDOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/sin-tacc.html">SIN TACC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="pages/vinos-y-bebidas.html">BEBIDAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="contacto.html" target="_blank">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link title" href="#donde-estamos">Donde estamos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
     <!--inicio del header-->
-    <header class="header-container">
+    <!-- <header class="header-container">
         <div>
             <a href="index.html">
-                <img src="images/logo.png" alt="logo" class="logo">
-        </div>
+                <img src="images/logo.png" alt="logo" class="img">
+        </div> -->
         <!--inicio de menu navegable-->
-        <nav class="header">
+        <!-- <nav class="header">
             <ul class="menu">
                 <li>
                     <a href="index.html" class="title">
@@ -66,7 +149,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
         <!--fin de menu navegable-->
 
     </header>
@@ -74,10 +157,18 @@
 
     <main class="main-container">
         <!--inicio de seccion 1 Carrousel de imagenes-->
-        <section class="carrousel">
-            <img src="images/home.png" alt="home1" class="home"> 
-            <img src="images/home2.png" alt="home2" class="home">
-            <img src="images/home3.jpg" alt="imagen3" class="home">
+        <section id="carouselExampleSlidesOnly" class="carousel slide carrousel-t" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/home.png"  class="d-block w-100" alt="home-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/home2.png" class="d-block w-100" alt="home-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/home3.jpg" class="d-block w-100" alt="home-3">
+                </div>
+            </div>
         </section>
         <!--fin de seccion 1 Carrousel de imagenes-->
 
@@ -88,55 +179,55 @@
         <!--fin de seccion 2 descripcion-->
 
         <!--inicio de seccion 3 productos-->
-        <section class="product-container">
-            <div class="product-1">
-                <div class="container">
+        <section class="product-cont">
+            <div class="producto-1">
+                <div class="cont">
                     <a href="pages/quesos.html">
-                        <img src="images/quesos.png" alt="Quesos" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Quesos</p>
+                        <img src="images/quesos.png" alt="Quesos" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Quesos</p>
                         </div>
                      </a>
                 </div>
-                <div class="container">
-                    <a href="pages/fiambres.html" class="orden">
-                        <img src="images/fiambres.jpg" alt="Fiambres" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Fiambres</p>
+                <div class="cont">
+                    <a href="pages/fiambres.html">
+                        <img src="images/fiambres.png" alt="Fiambres" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Fiambres</p>
                         </div>    
                     </a>
                 </div>
-                <div class="container">
+                <div class="cont">
                     <a href="pages/encurtidos.html">
-                        <img src="images/encuridosR.png" alt="Encurtidos" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Encurtidos</p>
+                        <img src="images/encuridosR.png" alt="Encurtidos" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Encurtidos</p>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="product-2">
-                <div class="container">
+            <div class="producto-2">
+                <div class="cont">
                     <a href="pages/delicatessen.html">
-                        <img src="images/delicatessen.png" alt="Delicatessen" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Delicatessen</p>
+                        <img src="images/delicatessen.png" alt="Delicatessen" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Delicatessen</p>
                         </div>
                      </a>
                 </div>
-                <div class="container">
+                <div class="cont">
                     <a href="pages/vinos-y-bebidas.html">
-                        <img src="images/bebidas.png" alt="Bebidas" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Vinos y Bebidas</p>
+                        <img src="images/bebidas.png" alt="Bebidas" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Vinos y Bebidas</p>
                         </div>    
                     </a>
                 </div>
-                <div class="container">
+                <div class="cont">
                     <a href="pages/sin-tacc.html">
-                        <img src="images/sin-tacc.png" alt="Sin TACC" class="imagproducts">
-                        <div class="middle">
-                            <p class="product-title texts">Sin TACC</p>
+                        <img src="images/sin-tacc.png" alt="Sin TACC" class="i-products img">
+                        <div class="text-pos">
+                            <p class="pro-titles texts-back">Sin TACC</p>
                         </div>
                     </a>
                 </div>
@@ -154,28 +245,28 @@
                 <div class="footer-inline">
                     <img src="medios de pagos/american.png" alt="American Express">
                     <img src="medios de pagos/maestro.png" alt="Maestro">
-                    <img src="medios de pagos/visa.png" alt="Visa">
+                    <img src="medios de pagos/visa.png" alt="Visa">   
                 </div>
             </div>
     
             <div class="footer-center">
                 <h4>Horarios</h4>
-                <p>lunes a viernes 8 a 19 hs
-                    sabados de 8 a 15 hs
-                </p>
+                <p>lunes a viernes 8 a 19 hs</p>
+                <p>sabados de 8 a 15 hs</p>
             </div>
             
             <div class="footer-center">
-                <h4>CONTACTO</h4>
+                <h4>Contacto</h4>
                 <a href="contacto.html" class="contact">
-                    <img src="images/contacto.png" alt="Contacto">
-                </a>
-                
+                    <img src="images/contacto.png" alt="Contacto" class="img">
+                </a>           
             </div>
     
             <div id="donde-estamos" class="footer-center">
                 <h4>Direccion</h4>
-                <p>Concejal Tribulato 1020, B1663MWV Gran Buenos Aires, Provincia de Buenos Aires, Argentina</p>
+                <p>Concejal Tribulato 1020,</p>
+                <p>B1663MWV Gran Buenos Aires,</p>
+                <p>Provincia de Buenos Aires, Argentina</p>
             </div>
         </div>
         <div>
@@ -184,5 +275,9 @@
     </footer>
     <!--Fin del footer-->
     
+
+    <!--JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
