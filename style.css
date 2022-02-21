@@ -53,7 +53,7 @@ img {max-width: 100%;}
 
 /*inicio estilo del main*/
 .main-container {
-    /* margin-top: 110px; */
+    margin-top: 135px;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr ;
     grid-template-rows: 700px 70px 800px;

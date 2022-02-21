@@ -5,67 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sin-Tacc</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--LINK CSS-->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <!--inicio del header-->
-    <header class="header-container">
-        <a href="../index.html">
-            <img src="../images/logo.png" alt="logo" class="logo">
-        </a>
-        <!--inicio de menu navegable-->
-        <nav class="header">
-            <ul class="menu">
-                <li>
-                    <a href="../index.html" class="title">
-                        INICIO
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/fiambres.html" class="title">
-                        FIAMBRES
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/delicatessen.html" class="title">
-                        DELICATESSEN
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/encurtidos.html" class="title">
-                        ENCURTIDOS
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/quesos.html" class="title">
-                        QUESOS
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/sin-tacc.html" class="title">
-                        SIN TACC
-                    </a>
-                </li>
-                <li>
-                    <a href="../pages/vinos-y-bebidas.html"  class="title" 
-                    id="border-header">
-                        VINOS Y BEBIDAS 
-                    </a>
-                </li>
-                <li>
-                    <a href="../contacto.html" target="_blank" class="title">
-                        CONTACTO
-                    </a>
-                </li>
-                <li>
-                    <a href="#donde-estamos" class="title">
-                        DONDE ESTAMOS
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!--fin de menu navegable-->
-
+    <!--nav bootstrap-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active title" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/fiambres.html">FIAMBRES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/quesos.html">QUESOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/delicatessen.html">DELICATESSEN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/encurtidos.html">ENCURTIDOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/sin-tacc.html">SIN TACC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../pages/vinos-y-bebidas.html">BEBIDAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="../contacto.html" target="_blank">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link title" href="#donde-estamos">Donde estamos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--fin del header-->
 
@@ -114,7 +101,11 @@
             <p class="end">Web desarrollada por Julieta Iaccarino</p>
         </div>
     </footer>
-    <!--fin del footer-->    
+    <!--fin del footer-->
+    
+    <!--JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 </body>
 </html>
